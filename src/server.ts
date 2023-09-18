@@ -12,7 +12,7 @@ app.register(fastifyCors, {
 })
 
 app.get('/', async function handler (request, reply) {
-  return { hello: 'world' }
+  return 'Route Home Working...' 
 })
 
 app.register(getAllPromptsRoute)
