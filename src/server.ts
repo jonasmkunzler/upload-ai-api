@@ -8,7 +8,7 @@ import { generateAICompletionRoute } from './routes/generate-ai-completion'
 const app = fastify()
 
 app.register(fastifyCors, {
-  origin: 'https://upload-ai-web-gamma.vercel.app/', // UI url
+  origin: ['https://upload-ai-web-oiab.vercel.app'] , // UI url
 })
 
 app.get('/', async function handler (request, reply) {
