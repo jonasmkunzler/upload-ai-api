@@ -8,8 +8,7 @@
   },
   "scripts": {
     "start": "node src/server.ts",
-    "dev": "tsx watch src/server.ts",
-    "build": "prisma generate && next build"
+    "dev": "tsx watch src/server.ts"
   },
   "author": "",
   "license": "ISC",
