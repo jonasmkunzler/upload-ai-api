@@ -8,7 +8,7 @@ import { generateAICompletionRoute } from './routes/generate-ai-completion'
 const app = fastify()
 
 app.register(fastifyCors, {
-  origin: '*', // UI urll
+  origin: '*', // UI url
 })
 
 app.register(getAllPromptsRoute)
@@ -23,6 +23,3 @@ app
   .then(() => {
     console.log('HTTP Server Running')
   })
-
-// httpie
-// REST Client
