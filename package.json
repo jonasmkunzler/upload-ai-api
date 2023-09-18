@@ -9,7 +9,8 @@
   "scripts": {
     "start": "node src/server.ts",
     "dev": "tsx watch src/server.ts",
-    "build": "prisma generate && tsc"
+    "postinstall": "prisma generate",
+    "build": "prisma generate && next build"
   },
   "author": "",
   "license": "ISC",
