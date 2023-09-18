@@ -11,15 +11,17 @@ app.register(fastifyCors, {
   origin: '*', // UI url
 })
 
+app.get('/', async function handler (request, reply) {
+  return { hello: 'world' }
+})
+
 app.register(getAllPromptsRoute)
 app.register(uploadVideoRoute)
 app.register(createTranscriptionRoute)
 app.register(generateAICompletionRoute)
 
 app
-  .listen({
-    port: 3333,
-  })
+  .listen({port:3333})
   .then(() => {
     console.log('HTTP Server Running')
   })
